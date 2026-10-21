@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+.centrar {
+  text-align: center;
+}
+
+/* Centro */
+.titulo {
+  margin: 30px 0;
+  padding-left: 20%;
+  flex: 0 0 80%;
+}
+
+.sala {
+  flex: 0 0 20%;
+  padding: 35px 0 0 0;
+}
+
+/* Información en la izquierda */
+.info-izq {
+  flex: 0 0 20%;
+}
+
+.borde {
+  width: 15%;
+  border: 2px solid;
+  height: 50%;
+  position: fixed;
+  background-color: white;
+}
+
+.info {
+  width: 80%;
+  margin: 40px 10% 0 10%;
+}
+
+.flex-info {
+  flex: 0 0 40%;
+}
+.flex-info-2 {
+  flex: 0 0 60%;
+  padding-left: 10px;
+  margin-top: 15px;
+}
+/*centro*/
+.espacio {
+  padding: 8% 0 6% 0;
+  background-image: url(../images/backGround.jpg);
+}
+
+.cuadro {
+  width: 50px;
+  height: 50px;
+  border: 1px solid;
+}
+
+.seleccionado-b {
+  background-color: #b82d23;
+}
+
+.seleccionados {
+  margin-top: 35px;
+}
+
+.cant-asientos {
+  margin-top: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.asientos-seleccionados {
+  margin-top: 15px;
+  width: 100%;
+}
+
+/* Colores asientos */
+.libre {
+  background-color: #f2eadc;
+  cursor: pointer;
+}
+
+.ocupado {
+  background-color: #380e0b;
+}
+.ocupado p {
+  color: #fff;
+}
+
+.seleccionado {
+  background-color: #b82d23;
+  cursor: pointer;
+}
+.seleccionado p {
+  color: #fff;
+}
+
+/* Asientos */
+.asientos {
+  flex: 0 0 60%;
+}
+.filas button {
+  flex: 0 0 4%;
+  margin: 0 0.5% 20px 0.5%;
+  height: 36px;
+  border: 1px solid;
+  font-size: 17px;
+}
+
+.pantalla {
+  width: 99%;
+  margin: 40px 0.5%;
+  height: 36px;
+  border: 2px solid;
+  text-align: center;
+  background-color: white;
+}
+.pantalla p {
+  margin-top: 5px;
+}
+
+/* Derecha */
+.derecha {
+  flex: 0 0 20%;
+  padding-left: 20px;
+}
+
+.letra {
+  flex: 0 0 20%;
+  margin: 2px 0 20px 0;
+  height: 36px;
+}
+
+.reservar {
+  flex: 0 0 80%;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  margin-left: 20px;
+}
+
+a button {
+  width: 110px;
+  height: 36px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #b82d23;
+  border: none;
+  cursor: pointer;
+}
+
+/* Footer */

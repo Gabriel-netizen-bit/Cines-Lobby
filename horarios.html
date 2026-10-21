@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <meta content="#100e12" name="theme-color"/>
+  <title>
+   Cines &middot; horarios
+  </title>
+  <link href="css/cartelera.css" rel="stylesheet"/>
+ </head>
+ <body data-page="horarios">
+  <header class="top">
+   <div class="top-inner">
+    <a class="brand" href="index.html">
+     CINES
+     <span>
+      .
+     </span>
+    </a>
+    <nav aria-label="Navegaci&oacute;n principal" class="main-nav">
+     <a data-t="home" href="index.html">
+     </a>
+     <a data-t="movies" href="Cartelera.html">
+     </a>
+     <a class="lobby" data-t="lobby" href="https://gabriel-netizen-bit.github.io/Lobby/index.html">
+     </a>
+    </nav>
+    <div class="langs">
+     <button data-lang="es" type="button">
+      ES
+     </button>
+     <button data-lang="en" type="button">
+      EN
+     </button>
+    </div>
+   </div>
+  </header>
+  <div class="steps-wrap">
+   <button aria-controls="reservationSteps" aria-expanded="false" aria-label="Abrir navegaci&oacute;n" class="mobile-menu-toggle steps-toggle" id="stepsToggle" type="button">
+    ☰
+   </button>
+   <nav aria-label="Pasos de reserva" class="steps" id="reservationSteps">
+    <a data-step="cartelera" data-t="movies" href="Cartelera.html">
+    </a>
+    <a data-step="horarios" data-t="shows" href="horarios.html">
+    </a>
+    <a data-step="butacas" data-t="seats" href="butacas.html">
+    </a>
+    <a data-step="resumen" data-t="summary" href="resumen.html">
+    </a>
+   </nav>
+  </div>
+  <main>
+   <div class="shell">
+    <div class="page-head">
+     <span class="eyebrow" data-t="shows">
+     </span>
+     <h1 data-t="selectShow">
+     </h1>
+     <p class="chosen" id="chosenMovie">
+     </p>
+     <p data-t="showSub">
+     </p>
+    </div>
+    <div id="message">
+    </div>
+    <div class="panel" id="showOptions">
+    </div>
+    <div class="confirm">
+     <a class="back" href="Cartelera.html">
+      &larr;
+      <span data-t="movies">
+      </span>
+     </a>
+    </div>
+   </div>
+  </main>
+  <footer class="footer">
+  <div class="footer-inner">
+    <p class="footer-message" data-t="demo"></p>
+    <a class="footer-lobby" href="https://gabriel-netizen-bit.github.io/Lobby/index.html">
+      <span class="footer-lobby-es">Volver a Lobby</span><span class="footer-lobby-en">Back to Lobby</span> <span aria-hidden="true">↗</span>
+    </a>
+  </div>
+</footer>
+  <script src="js/reserva.js">
+  </script>
+  <script src="js/app.js">
+  </script>
+ </body>
+</html>

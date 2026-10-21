@@ -1,0 +1,28 @@
+[
+  {
+    "id": "la-la-land",
+    "titulo": "La La Land",
+    "imagen": "images/Lalaland2.jpg",
+    "genero": "Musical / Romance",
+    "duracion": 128,
+    "descripcion": {
+      "es": "Dos artistas persiguen sus sueños en Los Ángeles.",
+      "en": "Two artists pursue their dreams in Los Angeles."
+    },
+    "audio": "original",
+    "formato": "2D"
+  },
+  {
+    "id": "duna",
+    "titulo": "Duna",
+    "imagen": "images/Duna.jpeg",
+    "genero": "Ciencia ficción",
+    "duracion": 155,
+    "descripcion": {
+      "es": "Una aventura épica en un planeta desértico.",
+      "en": "An epic adventure on a desert planet."
+    },
+    "audio": "original",
+    "formato": "2D / 3D"
+  }
+]

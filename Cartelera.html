@@ -1,0 +1,165 @@
+
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#100e12">
+
+  <title>Cines · cartelera</title>
+
+  <link rel="stylesheet" href="css/cartelera.css">
+</head>
+
+<body data-page="cartelera">
+
+  <!-- ======================================
+       ENCABEZADO PRINCIPAL
+       ====================================== -->
+  <header class="top">
+    <div class="top-inner">
+
+      <a class="brand" href="index.html">
+        CINES<span>.</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="index.html" data-t="home"></a>
+        <a href="Cartelera.html" data-t="movies"></a>
+        <a
+          class="lobby"
+          href="https://gabriel-netizen-bit.github.io/Lobby/index.html"
+          data-t="lobby">
+        </a>
+      </nav>
+
+      <div class="langs">
+        <button type="button" data-lang="es">ES</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ======================================
+       NAVEGACIÓN DE RESERVAS
+       ====================================== -->
+  <div class="steps-wrap">
+
+    <button
+      type="button"
+      id="stepsToggle"
+      class="mobile-menu-toggle steps-toggle"
+      aria-controls="reservationSteps"
+      aria-expanded="false"
+      aria-label="Abrir navegación">
+      ☰
+    </button>
+
+    <nav
+      id="reservationSteps"
+      class="steps"
+      aria-label="Pasos de reserva">
+
+      <a data-step="cartelera" href="Cartelera.html" data-t="movies"></a>
+      <a data-step="horarios" href="horarios.html" data-t="shows"></a>
+      <a data-step="butacas" href="butacas.html" data-t="seats"></a>
+      <a data-step="resumen" href="resumen.html" data-t="summary"></a>
+
+    </nav>
+  </div>
+
+  <main>
+
+    <!-- ======================================
+         PORTADA DE CARTELERA
+         ====================================== -->
+    <section class="hero">
+      <span class="eyebrow">CINES · LA EXPERIENCIA</span>
+      <h1 data-t="hero"></h1>
+      <p data-t="sub"></p>
+    </section>
+
+    <!-- ======================================
+         CATÁLOGO DE PELÍCULAS
+         ====================================== -->
+    <div class="shell catalog-layout">
+
+      <!-- Barra de búsqueda y filtros -->
+      <aside class="filters">
+
+        <label class="search-field">
+          <input
+            id="search"
+            type="search"
+            aria-label="Buscar película">
+        </label>
+
+        <label class="genre-field">
+          <select id="genre" aria-label="Género"></select>
+        </label>
+
+        <button
+          class="ghost"
+          id="clear"
+          data-t="clear"
+          aria-label="Limpiar filtros">
+          ×
+        </button>
+
+      </aside>
+
+      <!-- Galería -->
+      <section>
+
+        <div class="section-top">
+          <p id="count"></p>
+        </div>
+
+        <div id="message"></div>
+        <div id="grid" class="grid"></div>
+
+      </section>
+
+    </div>
+
+    <!-- ======================================
+         VENTANA DE SINOPSIS
+         ====================================== -->
+    <dialog id="movieDialog">
+
+      <button
+        class="ghost dialog-close"
+        id="dialogClose"
+        data-t="close">
+      </button>
+
+      <h2 id="dialogTitle"></h2>
+      <span class="micro" id="dialogMeta"></span>
+      <p id="dialogText"></p>
+
+    </dialog>
+
+  </main>
+
+  <!-- ======================================
+       PIE DE PÁGINA
+       ====================================== -->
+  <footer class="footer">
+  <div class="footer-inner">
+    <p class="footer-message" data-t="demo"></p>
+    <a class="footer-lobby" href="https://gabriel-netizen-bit.github.io/Lobby/index.html">
+      <span class="footer-lobby-es">Volver a Lobby</span><span class="footer-lobby-en">Back to Lobby</span> <span aria-hidden="true">↗</span>
+    </a>
+  </div>
+</footer>
+
+  <!-- ======================================
+       JAVASCRIPT
+       ====================================== -->
+  <script src="js/reserva.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
