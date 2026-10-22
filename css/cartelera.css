@@ -521,15 +521,29 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible {
   color: var(--muted);
   font-size: 13px;
 }
+
 .ticket {
   max-width: 560px;
+  width: 100%;
   margin: 0 auto;
-  border: 1px dashed var(--gold);
-  border-radius: 20px;
-  padding: 35px;
+  padding: 65px 55px;
   text-align: center;
-  background: #261d21;
+
+  border: none;
+  border-radius: 0;
+
+  background-color: #390b10;
+  background-image:
+  linear-gradient(
+    rgba(16, 10, 14, 0.25),
+    rgba(16, 10, 14, 0.25)
+  ),
+  url("../images/ticket-fondo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
+
 .ticket p {
   color: var(--muted);
 }
